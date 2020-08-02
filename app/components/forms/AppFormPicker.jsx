@@ -3,7 +3,6 @@ import { useFormikContext } from "formik";
 
 import AppPicker from "../AppPicker";
 import ErrorMessage from "./ErrorMessage";
-import { number } from "yup";
 
 function AppFormPicker({
 	items,
@@ -14,7 +13,6 @@ function AppFormPicker({
 	width,
 }) {
 	const { errors, setFieldValue, touched, values } = useFormikContext();
-	console.log(values);
 	return (
 		<>
 			<AppPicker

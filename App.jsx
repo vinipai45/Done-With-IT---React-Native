@@ -1,22 +1,12 @@
-import React, { useState } from "react";
-import { View, StyleSheet, SafeAreaView } from "react-native";
-import Screen from "./app/components/Screen";
+import React, { useEffect, useState } from "react";
+import { StyleSheet, Image, View, TouchableOpacity } from "react-native";
 
-import colors from "./app/config/colors";
-import MessagesScreen from "./app/screens/MessagesScreen";
+import Screen from "./app/components/Screen";
+import ImageInputList from "./app/components/ImageInputList";
 import ListingEditScreen from "./app/screens/ListingEditScreen";
 
 export default function App() {
-	return (
-		<Screen>
-			<ListingEditScreen />
-		</Screen>
-	);
+	return <ListingEditScreen />;
 }
 
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		backgroundColor: colors.lightBackground,
-	},
-});
+const styles = StyleSheet.create({});
